@@ -124,7 +124,6 @@ endif
 set nobackup                    " do not keep backup files, it's 70's style cluttering
 set directory=~/.vim/.tmp,~/tmp,/tmp
                                 " store swap files in one of these directories
-                                "    (in case swapfile is ever turned on)
 set viminfo='20,\"80            " read/write a .viminfo file, don't store more
                                 "    than 80 lines of registers
 set wildmenu                    " make tab completion for files/buffers act like bash
@@ -153,6 +152,124 @@ function! QFixToggle(forced)
     let g:qfix_win = bufnr("$")
   endif
 endfunction
+" }}}
+
+" Highlighting {{{
+if &t_Co > 2 || has("gui_running")
+   syntax on                    " switch syntax highlighting on, when the terminal has colours
+endif
+" }}}
+
+" Shortcut mappings {{{
+
+" Avoid accidental hits of <F1> while aiming for <Esc>
+map! <F1> <Esc>
+
+" Quickly close the current window, all windows
+nnoremap <leader>q :q<CR>
+nnoremap <leader>qa :qa<CR>
+
+" Use Q for formatting the current paragraph (or visual selection)
+vmap Q gq
+nmap Q gqap
+
+" make p in Visual mode replace the selected text with the yank register
+vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+
+" Shortcut to make
+nmap mk :make<CR>
+
+" Swap implementations of ` and ' jump to markers
+" By default, ' jumps to the marked line, ` jumps to the marked line and
+" column, so swap them
+nnoremap ' `
+nnoremap ` '
+
+" Use the damn hjkl keys
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+
+" Remap j and k to act as expected when used on long, wrapped, lines
+nnoremap j gj
+nnoremap k gk
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+nnoremap <leader>w <C-w>v<C-w>l
+
+" Complete whole filenames/lines with a quicker shortcut key in insert mode
+imap <C-f> <C-x><C-f>
+imap <C-l> <C-x><C-l>
+
+" Use ,d (or ,dd or ,dj or 20,dd) to delete a line without adding it to the
+" yanked stack (also, in visual mode)
+nmap <silent> <leader>d "_d
+vmap <silent> <leader>d "_d
+
+" Quick yanking to the end of the line
+nmap Y y$
+
+" Yank/paste to the OS clipboard with ,y and ,p
+nmap <leader>y "+y
+nmap <leader>Y "+y$
+nmap <leader>p "+p
+nmap <leader>P "+P
+
+" YankRing stuff
+let g:yankring_history_dir = '$HOME/.vim/.tmp'
+nmap <leader>r :YRShow<CR>
+
+" Edit the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Clears the search register
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+" Quickly get out of insert mode without your fingers having to leave the
+" home row (either use 'jj' or 'jk')
+inoremap jj <Esc>
+inoremap jk <Esc>
+
+" Quick alignment of text
+nmap <leader>al :left<CR>
+nmap <leader>ar :right<CR>
+nmap <leader>ac :center<CR>
+
+" Pull word under cursor into LHS of a substitute (for quick search and
+" replace)
+nmap <leader>z :%s#\<<C-r>=expand("<cword>")<CR>\>#
+
+" Sudo to write
+cmap w!! w !sudo tee % >/dev/null
+
+" Jump to matching pairs easily, with Tab
+nnoremap <Tab> %
+vnoremap <Tab> %
+
+" Folding
+nnoremap <Space> za
+vnoremap <Space> za
+
+" Strip all trailing whitespace from a file, using ,W
+nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
+
+" Run Ack fast
+nnoremap <leader>a :Ack<Space>
+
+" Creating folds for tags in HTML
+"nnoremap <leader>ft Vatzf
+
+" Reselect text that was just pasted with ,v
+nnoremap <leader>v V`]
+
+" Gundo.vim
+nnoremap <F5> :GundoToggle<CR>
 " }}}
 
 " Session settings {{{
