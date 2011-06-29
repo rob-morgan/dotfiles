@@ -155,3 +155,11 @@ function! QFixToggle(forced)
 endfunction
 " }}}
 
+" Session settings {{{
+set sessionoptions-=tabpages    " only save the current tab page
+set sessionoptions-=help        " don't save help windows
+let g:session_autoload='yes'    " restore sessions without a prompt
+let g:session_autosave='yes'    " save the current session without a prompt
+let g:session_default_to_last=1 " restore the last session that was in use
+" }}}
+
