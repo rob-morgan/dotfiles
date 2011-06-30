@@ -154,6 +154,21 @@ function! QFixToggle(forced)
 endfunction
 " }}}
 
+" Status line {{{
+function! CurDir()
+    return substitute(getcwd(), '/Users/$USER/', "~/", "g")
+endfunction
+
+set statusline=%f               " filename
+set statusline+=\ %m            " modified flag
+set statusline+=%<              " truncate here if line too long
+set statusline+=\ \ CWD:\ %{CurDir()}
+                                " current working directory 
+set statusline+=%=              " separate left and right aligned items
+set statusline+=%(%l,%c%)       " line and column numbers
+set statusline+=\ \ %P          " percentage through file
+" }}}
+
 " Highlighting {{{
 if &t_Co > 2 || has("gui_running")
    syntax on                    " switch syntax highlighting on, when the terminal has colours
