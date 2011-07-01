@@ -156,7 +156,7 @@ endfunction
 
 " Status line {{{
 function! CurDir()
-    return substitute(getcwd(), '/Users/$USER/', "~/", "g")
+    return substitute(getcwd(), "/Users/" . $USER . "/", "~/", "g")
 endfunction
 
 set statusline=%f               " filename
