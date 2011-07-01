@@ -105,6 +105,7 @@ set lazyredraw                  " don't update the display while executing macro
 set laststatus=2                " tell VIM to always put a status line in, even
                                 "    if there is only one window
 set cmdheight=2                 " use a status bar that is 2 rows high
+set fillchars+=vert:│           " use a line drawing char for better looking vertical splits
 " }}}
 
 " Vim behaviour {{{
