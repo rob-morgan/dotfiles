@@ -161,6 +161,8 @@ function! CurDir()
 endfunction
 
 set statusline=%f               " filename
+set statusline+=\ %y            " file type
+set statusline+=[%{&ff}]        " file format
 set statusline+=\ %m            " modified flag
 set statusline+=%<              " truncate here if line too long
 set statusline+=\ \ CWD:\ %{CurDir()}
