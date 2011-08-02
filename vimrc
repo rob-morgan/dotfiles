@@ -378,3 +378,7 @@ if has("autocmd")
 endif
 " }}}
 
+" Restore cursor position upon reopening files {{{
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+" }}}
+
