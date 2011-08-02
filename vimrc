@@ -298,3 +298,83 @@ let g:session_autosave='yes'    " save the current session without a prompt
 let g:session_default_to_last=1 " restore the last session that was in use
 " }}}
 
+" Filetype specific handling {{{
+" only do this part when compiled with support for autocommands
+if has("autocmd")
+    augroup invisible_chars "{{{
+        au!
+
+        " Show invisible characters in all of these files
+        "autocmd filetype vim setlocal list
+        "autocmd filetype python,rst setlocal list
+        "autocmd filetype ruby setlocal list
+        "autocmd filetype javascript,css setlocal list
+    augroup end "}}}
+
+    augroup vim_files "{{{
+        au!
+
+        " Bind <F1> to show the keyword under cursor
+        " general help can still be entered manually, with :h
+        autocmd filetype vim noremap <buffer> <F1> <Esc>:help <C-r><C-w><CR>
+        autocmd filetype vim noremap! <buffer> <F1> <Esc>:help <C-r><C-w><CR>
+    augroup end "}}}
+
+    augroup python_files "{{{
+        au!
+
+        " PEP8 compliance (set 1 tab = 4 chars explicitly, even if set
+        " earlier, as it is important)
+        autocmd filetype python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+        autocmd filetype python setlocal textwidth=80
+        autocmd filetype python match ErrorMsg '\%>80v.\+'
+
+        " But disable autowrapping as it is super annoying
+        autocmd filetype python setlocal formatoptions-=t
+
+        " Folding for Python (uses syntax/python.vim for fold definitions)
+        "autocmd filetype python,rst setlocal nofoldenable
+        "autocmd filetype python setlocal foldmethod=expr
+
+        " Python runners
+        autocmd filetype python map <buffer> <F5> :w<CR>:!python %<CR>
+        autocmd filetype python imap <buffer> <F5> <Esc>:w<CR>:!python %<CR>
+        autocmd filetype python map <buffer> <S-F5> :w<CR>:!ipython %<CR>
+        autocmd filetype python imap <buffer> <S-F5> <Esc>:w<CR>:!ipython %<CR>
+
+        " Run a quick static syntax check every time we save a Python file
+        autocmd BufWritePost *.py call Pyflakes()
+    augroup end " }}}
+
+    augroup ruby_files "{{{
+        au!
+
+        autocmd filetype ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+    augroup end " }}}
+
+    augroup css_files "{{{
+        au!
+
+        autocmd filetype css,less setlocal foldmethod=marker foldmarker={,}
+    augroup end "}}}
+
+    augroup javascript_files "{{{
+        au!
+
+        autocmd filetype javascript setlocal expandtab
+        autocmd filetype javascript setlocal listchars=trail:·,extends:#,nbsp:·
+        autocmd filetype javascript setlocal foldmethod=marker foldmarker={,}
+    augroup end "}}}
+
+    augroup textile_files "{{{
+        au!
+
+        autocmd filetype textile set tw=78 wrap
+
+        " Render YAML front matter inside Textile documents as comments
+        autocmd filetype textile syntax region frontmatter start=/\%^---$/ end=/^---$/
+        autocmd filetype textile highlight link frontmatter Comment
+    augroup end "}}}
+endif
+" }}}
+
