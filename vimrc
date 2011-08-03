@@ -50,7 +50,11 @@ set scrolloff=4                 " keep 4 lines off the edges of the screen when 
 set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
 set gdefault                    " search/replace "globally" (on a line) by default
-set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,eol:¬
+if has("gui_running")
+    set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,eol:¬
+else
+    set listchars=tab:>-,trail:.,extends:>,nbsp:_
+endif
 
 set nolist                      " don't show invisible characters by default,
                                 " but it is enabled for some file types (see later)
