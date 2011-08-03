@@ -13,3 +13,8 @@ Switch to the `~/dotfiles` directory, and fetch submodules:
     cd ~/dotfiles
     git submodule init
     git submodule update
+
+Add a symlink for the pathogen bundle
+
+    ln -s ~/dotfiles/vim/bundle/pathogen/autoload/pathogen.vim ~/dotfiles/vim/autoload/pathogen.vim
+
