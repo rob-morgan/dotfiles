@@ -189,7 +189,7 @@ map! <F1> <Esc>
 
 " Quickly close the current window, all windows
 nnoremap <leader>q :q<CR>
-nnoremap <leader>qa :qa<CR>
+nnoremap <leader>qq :qa<CR>
 
 " Use Q for formatting the current paragraph (or visual selection)
 vmap Q gq
