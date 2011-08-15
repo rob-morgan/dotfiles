@@ -386,3 +386,7 @@ endif
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 " }}}
 
+" Common abbreviations / misspellings {{{
+source ~/.vim/autocorrect.vim
+" }}}
+
