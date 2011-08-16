@@ -14,3 +14,7 @@
 	path = vim/bundle/colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 	ignore = dirty
+[submodule "vim/bundle/bufkill"]
+	path = vim/bundle/bufkill
+	url = https://github.com/vim-scripts/bufkill.vim.git
+	ignore = dirty
