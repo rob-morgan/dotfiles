@@ -7,6 +7,7 @@ Create symlinks:
     ln -s ~/dotfiles/vimrc ~/.vimrc
     ln -s ~/dotfiles/gvimrc ~/.gvimrc
     ln -s ~/dotfiles/vim ~/.vim
+    ln -s ~/dotfiles/git_template ~/.git_template
 
 Switch to the `~/dotfiles` directory, and fetch submodules:
 
