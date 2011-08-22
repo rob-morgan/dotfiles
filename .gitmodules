@@ -18,3 +18,7 @@
 	path = vim/bundle/bufkill
 	url = https://github.com/vim-scripts/bufkill.vim.git
 	ignore = dirty
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = https://github.com/vim-scripts/UltiSnips.git
+	ignore = dirty
