@@ -394,7 +394,6 @@ source ~/.vim/autocorrect.vim
 " }}}
 
 if !has("gui_running")
-    let g:solarized_termcolors=256
     colorscheme solarized
 endif
 
