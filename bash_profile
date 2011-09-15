@@ -30,10 +30,6 @@ fi
 case "$OSNAME" in
   Darwin )
 
-  # Set PATH for MacPython 2.6
-  PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
-  export PATH
-
   # Set PATH for use with MacPorts
   PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
   export PATH
