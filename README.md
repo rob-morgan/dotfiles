@@ -4,10 +4,7 @@ Installation:
 
 Create symlinks:
 
-    ln -s ~/dotfiles/vimrc ~/.vimrc
-    ln -s ~/dotfiles/gvimrc ~/.gvimrc
-    ln -s ~/dotfiles/vim ~/.vim
-    ln -s ~/dotfiles/git_template ~/.git_template
+	~/dotfiles/create_symlinks
 
 Switch to the `~/dotfiles` directory, and fetch submodules:
 

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Bash
+ln -s ~/dotfiles/bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bashrc ~/.bashrc
+
+# Vim
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/gvimrc ~/.gvimrc
+ln -s ~/dotfiles/vim ~/.vim
+
+# Git
+ln -s ~/dotfiles/git_template ~/.git_template
+
+# Misc
+ln -s ~/dotfiles/ackrc ~/.ackrc
+

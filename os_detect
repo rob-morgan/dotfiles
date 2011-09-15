@@ -1,0 +1,7 @@
+#!/bin/sh
+
+OSNAME=$( uname -s )
+# strip OS type and version under Cygwin (e.g. CYGWIN_NT-5.1 => Cygwin)
+OSNAME=${OSNAME/CYGWIN_*/Cygwin}
+[ -z $OSNAME ] && echo "os_detect: warning - OSNAME not set"
+
