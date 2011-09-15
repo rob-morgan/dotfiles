@@ -31,7 +31,8 @@ case "$OSNAME" in
   Darwin )
 
   # Set PATH for use with MacPorts
-  PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
+  [ -d "/opt/local/sbin" ] && PATH="/opt/local/sbin:${PATH}"
+  [ -d "/opt/local/bin" ] && PATH="/opt/local/bin:${PATH}"
   export PATH
   ;;
 esac
