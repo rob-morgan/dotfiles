@@ -394,6 +394,15 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 source ~/.vim/autocorrect.vim
 " }}}
 
+" Creating underline/overline headings for markup languages
+" Inspired by http://sphinx.pocoo.org/rest.html#sections
+nnoremap <leader>h1 yyPVr=jyypVr=
+nnoremap <leader>h2 yyPVr*jyypVr*
+nnoremap <leader>h3 yypVr=
+nnoremap <leader>h4 yypVr-
+nnoremap <leader>h5 yypVr^
+nnoremap <leader>h6 yypVr"
+
 if !has("gui_running")
     colorscheme solarized
 endif
