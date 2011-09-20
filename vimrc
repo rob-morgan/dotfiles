@@ -383,6 +383,12 @@ if has("autocmd")
         autocmd filetype textile syntax region frontmatter start=/\%^---$/ end=/^---$/
         autocmd filetype textile highlight link frontmatter Comment
     augroup end "}}}
+
+    augroup markdown_files "{{{
+		au!
+
+		autocmd filetype markdown setlocal wrap linebreak nolist
+	augroup end "}}}
 endif
 " }}}
 
