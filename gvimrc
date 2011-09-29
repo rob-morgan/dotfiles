@@ -1,11 +1,12 @@
 " Set font
 if has("win32")
-    set guifont=Consolas:h14
+    set guifont=Consolas:h11
 else
     set guifont=Inconsolata:h14
 endif
 
 " Set color scheme
+set background=light
 colorscheme solarized
 
 " Remove toolbar, left scrollbar and right scrollbar

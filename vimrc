@@ -51,12 +51,6 @@ set scrolloff=4                 " keep 4 lines off the edges of the screen when 
 set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
 set gdefault                    " search/replace "globally" (on a line) by default
-if has("gui_running")
-    set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,eol:¬
-else
-    set listchars=tab:>-,trail:.,extends:>,nbsp:_
-endif
-
 set nolist                      " don't show invisible characters by default,
                                 " but it is enabled for some file types (see later)
 set pastetoggle=<F2>            " when in insert mode, press <F2> to go to
@@ -111,6 +105,12 @@ set laststatus=2                " tell VIM to always put a status line in, even
                                 "    if there is only one window
 set cmdheight=2                 " use a status bar that is 2 rows high
 set fillchars+=vert:│           " use a line drawing char for better looking vertical splits
+if has("gui_running")
+    set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,eol:¬
+else
+    set listchars=tab:>-,trail:.,extends:>,nbsp:_
+endif
+
 if exists('+colorcolumn')
     set colorcolumn=100         " show column marker at column 100
 endif
@@ -397,7 +397,11 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 " }}}
 
 " Common abbreviations / misspellings {{{
-source ~/.vim/autocorrect.vim
+if has("win32")
+	source $HOME/vimfiles/autocorrect.vim
+else
+	source $HOME/.vim/autocorrect.vim
+endif
 " }}}
 
 " Creating underline/overline headings for markup languages
