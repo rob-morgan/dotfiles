@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Create links for gvim. This must be run in an admin command prompt.
+cmd /c mklink `cygpath -w $HOMEPATH/_gvimrc` `cygpath -w ~/dotfiles/gvimrc`
+cmd /c mklink `cygpath -w $HOMEPATH/_vimrc` `cygpath -w ~/dotfiles/vimrc`
+cmd /c mklink /D `cygpath -w $HOMEPATH/vimfiles` `cygpath -w ~/dotfiles/vim`
+
