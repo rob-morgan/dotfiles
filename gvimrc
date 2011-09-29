@@ -1,6 +1,6 @@
 " Set font
 if has("win32")
-    set guifont=Consolas:h11
+    set guifont=Consolas:h10
 else
     set guifont=Inconsolata:h14
 endif
