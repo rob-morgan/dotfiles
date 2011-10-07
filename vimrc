@@ -29,6 +29,11 @@ filetype plugin indent on       " enable detection, plugins and indenting in one
 " Change the mapleader from \ to ,
 let mapleader=","
 
+let g:vimfilesdir = ".vim"
+if has("win32")
+	let g:vimfilesdir = "vimfiles"
+endif
+
 " Editing behaviour {{{
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
@@ -128,10 +133,10 @@ set history=1000                " remember more commands and search history
 set undolevels=1000             " use many muchos levels of undo
 if v:version >= 730
     set undofile                " keep a persistent backup file
-    set undodir=~/.vim/.undo,~/tmp,/tmp
+    exec expand("set undodir=~/" . g:vimfilesdir . "/.undo,~/tmp,/tmp")
 endif
 set nobackup                    " do not keep backup files, it's 70's style cluttering
-set directory=~/.vim/.tmp,~/tmp,/tmp
+exec expand("set directory=~/" . g:vimfilesdir . "/.tmp,~/tmp,/tmp")
                                 " store swap files in one of these directories
 set viminfo='20,\"80            " read/write a .viminfo file, don't store more
                                 "    than 80 lines of registers
