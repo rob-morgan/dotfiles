@@ -34,3 +34,7 @@
 	path = solarized/mintty
 	url = https://github.com/karlin/mintty-colors-solarized.git
 	ignore = dirty
+[submodule "vim/bundle/preview"]
+	path = vim/bundle/preview
+	url = https://github.com/greyblake/vim-preview.git
+	ignore = dirty
