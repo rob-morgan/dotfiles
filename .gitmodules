@@ -38,3 +38,7 @@
 	path = vim/bundle/preview
 	url = https://github.com/greyblake/vim-preview.git
 	ignore = dirty
+[submodule "vim/bundle/delimitmate"]
+	path = vim/bundle/delimitmate
+	url = https://github.com/Raimondi/delimitMate.git
+	ignore = dirty
