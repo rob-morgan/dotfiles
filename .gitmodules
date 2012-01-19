@@ -50,3 +50,11 @@
 	path = vim/bundle/endwise
 	url = https://github.com/tpope/vim-endwise.git
 	ignore = dirty
+[submodule "vim/bundle/genutils"]
+	path = vim/bundle/genutils
+	url = https://github.com/vim-scripts/genutils.git
+	ignore = dirty
+[submodule "vim/bundle/SelectBuf"]
+	path = vim/bundle/SelectBuf
+	url = https://github.com/vim-scripts/SelectBuf.git
+	ignore = dirty
