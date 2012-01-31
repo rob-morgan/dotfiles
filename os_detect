@@ -3,5 +3,7 @@
 OSNAME=$( uname -s )
 # strip OS type and version under Cygwin (e.g. CYGWIN_NT-5.1 => Cygwin)
 OSNAME=${OSNAME/CYGWIN_*/Cygwin}
+# strip OS type and version under MinGW (e.g. MINGW32_NT-6.1 => MinGW)
+OSNAME=${OSNAME/MINGW*/MinGW}
 [ -z $OSNAME ] && echo "os_detect: warning - OSNAME not set"
 
