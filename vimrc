@@ -394,6 +394,13 @@ if has("autocmd")
 
 		autocmd filetype markdown setlocal wrap linebreak nolist
 	augroup end "}}}
+
+    augroup cmake_files "{{{
+		au!
+
+		autocmd filetype cmake setlocal expandtab
+	augroup end "}}}
+
 endif
 " }}}
 
