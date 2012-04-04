@@ -31,7 +31,7 @@ let mapleader=","
 
 let g:vimfilesdir = ".vim"
 if has("win32")
-	let g:vimfilesdir = "vimfiles"
+    let g:vimfilesdir = "vimfiles"
 endif
 
 " Editing behaviour {{{
@@ -390,16 +390,16 @@ if has("autocmd")
     augroup end "}}}
 
     augroup markdown_files "{{{
-		au!
+        au!
 
-		autocmd filetype markdown setlocal wrap linebreak nolist
-	augroup end "}}}
+        autocmd filetype markdown setlocal wrap linebreak nolist
+    augroup end "}}}
 
     augroup cmake_files "{{{
-		au!
+        au!
 
-		autocmd filetype cmake setlocal expandtab
-	augroup end "}}}
+        autocmd filetype cmake setlocal expandtab
+    augroup end "}}}
 
 endif
 " }}}
@@ -410,9 +410,9 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 
 " Common abbreviations / misspellings {{{
 if has("win32")
-	source $HOME/vimfiles/autocorrect.vim
+    source $HOME/vimfiles/autocorrect.vim
 else
-	source $HOME/.vim/autocorrect.vim
+    source $HOME/.vim/autocorrect.vim
 endif
 " }}}
 
