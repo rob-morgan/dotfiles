@@ -62,3 +62,6 @@
 	path = vim/bundle/copy-as-rtf
 	url = https://github.com/zerowidth/vim-copy-as-rtf.git
 	ignore = dirty
+[submodule "solarized/gnome-terminal-colors-solarized"]
+	path = solarized/gnome-terminal-colors-solarized
+	url = https://github.com/sigurdga/gnome-terminal-colors-solarized
