@@ -65,3 +65,6 @@
 [submodule "solarized/gnome-terminal-colors-solarized"]
 	path = solarized/gnome-terminal-colors-solarized
 	url = https://github.com/sigurdga/gnome-terminal-colors-solarized
+[submodule "vim/bundle/flake8"]
+	path = vim/bundle/flake8
+	url = https://github.com/nvie/vim-flake8.git
