@@ -67,6 +67,7 @@ alias la="ls -lA $LS_OPTS"              # all but . and ..
 # Misc
 
 # Set VISUAL editor command for git
+export EDITOR=vim
 export VISUAL="vim"
 
 # Platform-specific
