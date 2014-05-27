@@ -18,6 +18,14 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" To disable a plugin add its bundle name to the following list
+let g:pathogen_disabled = []
+
+" The copy-as-rtf plugin only works on Mac
+if !has('mac')
+    call add(g:pathogen_disabled, 'copy-as-rtf')
+endif
+
 " Use pathogen to easily modify the runtime path to include all plugins under
 " the ~/.vim/bundle directory
 filetype on                     " avoid 'filetype off' non-zero exit code
