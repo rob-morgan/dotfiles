@@ -18,6 +18,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Autoload the pathogen plugin from its submodule location
+runtime bundle/pathogen/autoload/pathogen.vim
+
 " To disable a plugin add its bundle name to the following list
 let g:pathogen_disabled = []
 
