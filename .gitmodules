@@ -57,3 +57,12 @@
 [submodule "vim/bundle/flake8"]
 	path = vim/bundle/flake8
 	url = https://github.com/nvie/vim-flake8.git
+	ignore = dirty
+[submodule "solarized"]
+	path = solarized
+	url = https://github.com/altercation/solarized.git
+	ignore = dirty
+[submodule "vim/bundle/colors-solarized"]
+	path = vim/bundle/colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
