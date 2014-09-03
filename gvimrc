@@ -9,6 +9,9 @@ endif
 set background=light
 colorscheme solarized
 
+" Enable the solarized ToggleBG command
+call togglebg#map("")
+
 " Remove toolbar, left scrollbar and right scrollbar
 set guioptions-=T
 set guioptions-=l

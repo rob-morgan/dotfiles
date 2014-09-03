@@ -433,7 +433,9 @@ nnoremap <leader>h4 yypVr-
 nnoremap <leader>h5 yypVr^
 nnoremap <leader>h6 yypVr"
 
+" Set terminal colorscheme (GUI colorscheme is set in gvimrc)
 if !has("gui_running")
+    let g:solarized_termtrans=1
+    set background=dark
     colorscheme solarized
 endif
-
