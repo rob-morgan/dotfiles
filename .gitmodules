@@ -16,7 +16,7 @@
 	ignore = dirty
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
-	url = https://github.com/vim-scripts/UltiSnips.git
+	url = https://github.com/SirVer/ultisnips.git
 	ignore = dirty
 [submodule "vim/bundle/markdown"]
 	path = vim/bundle/markdown
