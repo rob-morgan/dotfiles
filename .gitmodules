@@ -62,3 +62,7 @@
 	path = solarized
 	url = https://github.com/altercation/solarized.git
 	ignore = dirty
+[submodule "vim/bundle/misc"]
+	path = vim/bundle/misc
+	url = https://github.com/xolox/vim-misc.git
+	ignore = dirty
