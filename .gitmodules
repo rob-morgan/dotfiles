@@ -62,7 +62,3 @@
 	path = solarized
 	url = https://github.com/altercation/solarized.git
 	ignore = dirty
-[submodule "vim/bundle/colors-solarized"]
-	path = vim/bundle/colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-	ignore = dirty
