@@ -74,7 +74,7 @@ set pastetoggle=<F2>            " when in insert mode, press <F2> to go to
                                 "    that won't be autoindented
 set mouse=a                     " enable using the mouse if terminal emulator
                                 "    supports it (xterm does)
-set fileformats=dos,unix,mac
+set fileformats=unix,dos,mac
 set formatoptions+=1            " When wrapping paragraphs, don't end lines
                                 "    with 1-letter words (looks stupid)
 
