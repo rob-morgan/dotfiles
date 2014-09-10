@@ -25,7 +25,12 @@ shopt -s cdspell
 #
 # Define to avoid flattening internal contents of tar files
 # COMP_TAR_INTERNAL_PATHS=1
-#
+
+# Source the local environment script if it exists
+if [ -f ~/.local_env ]; then
+    source ~/.local_env
+fi
+
 # Turn on programmable completion enhancements for cygwin
 if [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion
