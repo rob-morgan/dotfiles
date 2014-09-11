@@ -66,3 +66,7 @@
 	path = vim/bundle/misc
 	url = https://github.com/xolox/vim-misc.git
 	ignore = dirty
+[submodule "vim/bundle/unimpaired"]
+	path = vim/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+	ignore = dirty
