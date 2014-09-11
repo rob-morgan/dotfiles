@@ -82,3 +82,7 @@
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
 	ignore = dirty
+[submodule "vim/bundle/youcompleteme"]
+	path = vim/bundle/youcompleteme
+	url = https://github.com/Valloric/YouCompleteMe.git
+	ignore = dirty
