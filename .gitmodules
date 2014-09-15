@@ -86,3 +86,7 @@
 	path = vim/bundle/youcompleteme
 	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
+[submodule "vim/bundle/gradle"]
+	path = vim/bundle/gradle
+	url = https://github.com/tfnico/vim-gradle.git
+	ignore = dirty
