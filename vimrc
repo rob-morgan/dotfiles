@@ -322,6 +322,19 @@ let g:session_autosave='yes'    " save the current session without a prompt
 let g:session_default_to_last=1 " restore the last session that was in use
 " }}}
 
+" Eclim settings {{{
+let g:EclimCompletionMethod='omnifunc' " make YCM and Eclim play nice
+" }}}
+
+" YouCompleteMe settings {{{
+let g:ycm_key_list_select_completion=['<c-tab>','<Down>']
+let g:ycm_key_list_previous_completion=['<c-s-tab>','<Up>']
+" }}}
+
+" SuperTab settings {{{
+let g:SuperTabDefaultCompletionType='<c-tab>'
+" }}}
+
 " Filetype specific handling {{{
 " only do this part when compiled with support for autocommands
 if has("autocmd")
