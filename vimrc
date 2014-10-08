@@ -300,6 +300,9 @@ nnoremap <leader>a :Ack<Space>
 " Reselect text that was just pasted with ,v
 nnoremap <leader>v V`]
 
+" Auto-close tags quickly
+:inoremap <lt>// </<C-X><C-O>
+
 " Gundo.vim
 nnoremap <F5> :GundoToggle<CR>
 " }}}
