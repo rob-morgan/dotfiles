@@ -98,3 +98,7 @@
 	path = vim/bundle/sensible
 	url = https://github.com/tpope/vim-sensible.git
 	ignore = dirty
+[submodule "vim/bundle/scala"]
+	path = vim/bundle/scala
+	url = https://github.com/derekwyatt/vim-scala.git
+	ignore = dirty
