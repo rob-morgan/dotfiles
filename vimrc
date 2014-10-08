@@ -227,6 +227,10 @@ nnoremap ` '
 nnoremap j gj
 nnoremap k gk
 
+" Less awkward EOL/BOL mappings
+noremap L $
+noremap H ^
+
 " Easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
