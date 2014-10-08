@@ -10,6 +10,9 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
 ln -s ~/dotfiles/vim ~/.vim
 
+# Vrapper
+ln -s ~/dotfiles/vrapperrc ~/.vrapperrc
+
 # Git
 ln -s ~/dotfiles/git_template ~/.git_template
 

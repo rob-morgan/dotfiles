@@ -1,0 +1,11 @@
+" Configuration file for Vrapper Eclipse plugin
+"
+imap jj <esc>
+map L $
+map H ^
+set autoindent
+set smartindent
+set ignorecase
+set smartcase
+set incsearch
+

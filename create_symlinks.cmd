@@ -16,6 +16,9 @@
 @mklink %HOMEDIR%\.gvimrc %HOMEDIR%\dotfiles\gvimrc
 @mklink /D %HOMEDIR%\.vim %HOMEDIR%\dotfiles\vim
 
+:: Vrapper
+@mklink %HOMEDIR%\.vrapperrc %HOMEDIR%\dotfiles\vrapperrc
+
 :: Gvim
 @mklink %HOMEDIR%\_gvimrc %HOMEDIR%\dotfiles\gvimrc
 @mklink %HOMEDIR%\_vimrc %HOMEDIR%\dotfiles\vimrc
