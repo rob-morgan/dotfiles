@@ -319,6 +319,16 @@ let g:session_autosave='yes'    " save the current session without a prompt
 let g:session_default_to_last=1 " restore the last session that was in use
 " }}}
 
+" Tablist settings {{{
+nnoremap <silent> <F8> :TlistToggle<CR>
+let Tlist_Exit_OnlyWindow = 1     " exit if taglist is last window open
+let Tlist_Show_One_File = 1       " Only show tags for current buffer
+let Tlist_Enable_Fold_Column = 0  " no fold column (only showing one file)
+let Tlist_WinWidth = 50
+let tlist_scala_settings = 'scala;t:trait;c:class;T:type;' .
+                         \ 'm:method;C:constant;l:local;p:package;o:object'
+" }}}
+
 " Eclim settings {{{
 let g:EclimCompletionMethod='omnifunc' " make YCM and Eclim play nice
 " }}}

@@ -20,4 +20,5 @@ git config --global init.templatedir '~/.git_template'
 
 # Misc
 ln -s ~/dotfiles/ackrc ~/.ackrc
+ln -s ~/dotfiles/dotctags ~/.ctags
 

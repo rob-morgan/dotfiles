@@ -31,4 +31,5 @@ git config --global init.templatedir '~/.git_template'
 
 :: Misc
 @mklink %HOMEDIR%\.ackrc %HOMEDIR%\dotfiles\ackrc
+@mklink %HOMEDIR%\.ctags %HOMEDIR%\dotfiles\dotctags
 
