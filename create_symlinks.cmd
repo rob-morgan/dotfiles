@@ -10,6 +10,7 @@
 @mklink %HOMEDIR%\.bash_profile %HOMEDIR%\dotfiles\bash_profile
 @mklink %HOMEDIR%\.bashrc %HOMEDIR%\dotfiles\bashrc
 @mklink %HOMEDIR%\.bash_completion %HOMEDIR%\dotfiles\bash_completion
+@mklink %HOMEDIR%\.sh %HOMEDIR%\dotfiles\sh
 
 :: Vim
 @mklink %HOMEDIR%\.vimrc %HOMEDIR%\dotfiles\vimrc

@@ -26,6 +26,13 @@ shopt -s cdspell
 # Define to avoid flattening internal contents of tar files
 # COMP_TAR_INTERNAL_PATHS=1
 
+# Source scripts found in ~/.sh
+if [ -e ~/.sh/*.sh ]; then
+    for f in ~/.sh/*.sh; do
+        source $f
+    done
+fi
+
 # Source the local environment script if it exists
 if [ -f ~/.local_env ]; then
     source ~/.local_env
