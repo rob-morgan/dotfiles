@@ -26,6 +26,7 @@
 
 :: Git
 @mklink %HOMEDIR%\.git_template %HOMEDIR%\dotfiles\git_template
+git config --global init.templatedir '~/.git_template'
 
 :: Misc
 @mklink %HOMEDIR%\.ackrc %HOMEDIR%\dotfiles\ackrc
