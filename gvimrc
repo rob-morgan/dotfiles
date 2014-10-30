@@ -19,7 +19,7 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
-" Maximize horizontal and vertical dimensions
-set lines=999
-set columns=9999
+" Sensible startup horizontal and vertical dimensions
+set lines=80
+set columns=260
 
