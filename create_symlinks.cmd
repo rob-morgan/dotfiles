@@ -17,7 +17,8 @@
 @mklink %HOMEDIR%\.gvimrc %HOMEDIR%\dotfiles\gvimrc
 @mklink /D %HOMEDIR%\.vim %HOMEDIR%\dotfiles\vim
 
-:: Vrapper
+:: IDE Vim plugins
+@mklink %HOMEDIR%\.ideavimrc %HOMEDIR%\dotfiles\ideavimrc
 @mklink %HOMEDIR%\.vrapperrc %HOMEDIR%\dotfiles\vrapperrc
 
 :: Gvim

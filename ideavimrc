@@ -1,0 +1,9 @@
+" Configuration file for IdeaVim plugin
+"
+imap jj <esc>
+map L $
+map H ^
+set number
+set ignorecase
+set smartcase
+
