@@ -54,6 +54,7 @@ set expandtab                   " expand tabs by default (overloadable per file 
 set shiftwidth=4                " number of spaces to use for autoindenting
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 set copyindent                  " copy the previous indentation on autoindenting
+set relativenumber              " show line numbers relative to the current cursor position
 set number                      " always show line numbers
 set showmatch                   " set show matching parenthesis
 set ignorecase                  " ignore case when searching
