@@ -102,3 +102,7 @@
 	path = vim/bundle/scala
 	url = https://github.com/derekwyatt/vim-scala.git
 	ignore = dirty
+[submodule "vim/bundle/securemodelines"]
+	path = vim/bundle/securemodelines
+	url = https://github.com/ciaranm/securemodelines.git
+	ignore = dirty
