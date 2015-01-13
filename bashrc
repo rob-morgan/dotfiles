@@ -43,7 +43,12 @@ if [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion
 fi
 
-# Turn on programmable completion enhancements for mac
+# Turn on programmable completion enhancements for homebrew
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+# Turn on programmable completion enhancements for macports
 if [ -f /opt/local/etc/bash_completion ]; then
 	source /opt/local/etc/bash_completion
 fi
