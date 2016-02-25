@@ -18,10 +18,6 @@
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 	ignore = dirty
-[submodule "vim/bundle/markdown"]
-	path = vim/bundle/markdown
-	url = https://github.com/tpope/vim-markdown.git
-	ignore = dirty
 [submodule "vim/bundle/preview"]
 	path = vim/bundle/preview
 	url = https://github.com/greyblake/vim-preview.git
