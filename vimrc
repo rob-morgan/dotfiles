@@ -333,6 +333,7 @@ let tlist_scala_settings = 'scala;t:trait;c:class;T:type;' .
 " Eclim settings {{{
 let g:EclimCompletionMethod='omnifunc' " make YCM and Eclim play nice
 let g:EclimMavenPomClasspathUpdate=0   " disable auto-update .classpath
+let g:EclimJavaImplInsertAtCursor=1    " enable :JavaImpl insert near cursor
 " }}}
 
 " YouCompleteMe settings {{{
