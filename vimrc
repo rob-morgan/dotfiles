@@ -345,6 +345,12 @@ let g:ycm_key_list_previous_completion=['<c-s-tab>','<Up>']
 let g:SuperTabDefaultCompletionType='<c-tab>'
 " }}}
 
+" Markdown settings {{{
+let g:markdown_fenced_languages = ['html', 'xml', 'python', 'sh', 'java', 'json', 'yaml']
+command MarkdownPreview !open -a "Google Chrome" "%"
+map <silent><C-m> :MarkdownPreview<cr><cr>
+" }}}
+"
 " Filetype specific handling {{{
 " only do this part when compiled with support for autocommands
 if has("autocmd")
@@ -426,6 +432,7 @@ if has("autocmd")
     augroup markdown_files "{{{
         au!
 
+        autocmd BufNewFile,BufReadPost *.md set filetype=markdown
         autocmd filetype markdown setlocal wrap linebreak nolist
     augroup end "}}}
 
