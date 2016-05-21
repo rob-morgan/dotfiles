@@ -106,3 +106,7 @@
 	path = mintty-colors-solarized
 	url = https://github.com/karlin/mintty-colors-solarized.git
     ignore = dirty
+[submodule "vim/bundle/editorconfig"]
+	path = vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
+    ignore = dirty
