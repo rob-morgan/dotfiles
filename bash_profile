@@ -34,6 +34,9 @@ case "$OSNAME" in
   [ -d "/opt/local/sbin" ] && PATH="/opt/local/sbin:${PATH}"
   [ -d "/opt/local/bin" ] && PATH="/opt/local/bin:${PATH}"
   export PATH
+
+  # Re-add ssh keys to the openssh keychain
+  ssh-add -A > /dev/null 2>&1
   ;;
 esac
 
