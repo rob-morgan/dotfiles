@@ -436,6 +436,12 @@ if has("autocmd")
         autocmd filetype markdown setlocal wrap linebreak nolist
     augroup end "}}}
 
+    augroup rst_files "{{{
+        au!
+
+        autocmd filetype rst setlocal wrap linebreak nolist
+    augroup end "}}}
+
     augroup cmake_files "{{{
         au!
 
