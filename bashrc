@@ -95,6 +95,9 @@ case "$OSNAME" in
 	Darwin )
 	# Colorize the terminal
 	export CLICOLOR=1;
+
+	# Fix tab completion in the Python interactive shell
+	export PYTHONSTARTUP=$HOME/dotfiles/pythonrc.py
 	;;
 
 	Cygwin )
