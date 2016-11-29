@@ -18,23 +18,50 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Autoload the pathogen plugin from its submodule location
-runtime bundle/pathogen/autoload/pathogen.vim
+" Required Vundle setup
+filetype on                     " avoid 'filetype off' non-zero exit code
+filetype off                    " force reloading *after* bundles loaded
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" To disable a plugin add its bundle name to the following list
-let g:pathogen_disabled = []
+" Let Vundle manage Vundle (required)
+Plugin 'VundleVim/Vundle.vim'
 
+" Github hosted plugins
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tfnico/vim-gradle'
+Plugin 'xolox/vim-misc'
+Plugin 'greyblake/vim-preview'
+Plugin 'tpope/vim-repeat'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'ciaranm/securemodelines'
+Plugin 'tpope/vim-sensible'
+Plugin 'xolox/vim-session'
+Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-surround'
+Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'Valloric/YouCompleteMe'
 " The copy-as-rtf plugin only works on Mac
-if !has('mac')
-    call add(g:pathogen_disabled, 'copy-as-rtf')
+if has('mac')
+    Plugin 'zerowidth/vim-copy-as-rtf'
 endif
 
-" Use pathogen to easily modify the runtime path to include all plugins under
-" the ~/.vim/bundle directory
-filetype on                     " avoid 'filetype off' non-zero exit code
-filetype off                    " force reloading *after* pathogen loaded
-call pathogen#infect('bundle/{}', '~/dotfiles/solarized/vim-{}')
-call pathogen#helptags()
+" Vim scripts plugins
+Plugin 'SelectBuf'
+Plugin 'bufkill.vim'
+Plugin 'genutils'
+Plugin 'taglist.vim'
+
+" All plugins must be added before the following lines
+call vundle#end()
 filetype plugin indent on       " enable detection, plugins and indenting in one step
 
 " Change the mapleader from \ to ,

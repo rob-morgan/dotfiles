@@ -10,9 +10,8 @@ On Windows, mklink is used to create symbolic links for the gVim startup files. 
 
 	~/dotfiles/create_symlinks_windows
 
-Switch to the `~/dotfiles` directory, and fetch submodules:
+Switch to the `~/dotfiles` directory, and install plugins:
 
     cd ~/dotfiles
-    git submodule init
-    git submodule update
+    vim +PluginInstall +qall
 
