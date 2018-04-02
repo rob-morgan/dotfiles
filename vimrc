@@ -150,7 +150,7 @@ else
 endif
 
 if exists('+colorcolumn')
-    set colorcolumn=100         " show column marker at column 100
+    set colorcolumn=120         " show column marker at column 120
 endif
 " }}}
 
