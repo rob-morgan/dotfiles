@@ -89,6 +89,9 @@ alias la="ls -lA $LS_OPTS"              # all but . and ..
 export EDITOR=vim
 export VISUAL="vim"
 
+# Set GOPATH for golang
+export GOPATH=~/dev/go
+
 # Platform-specific
 [ -z $OSNAME ] && echo "bashrc: warning - OSNAME not set"
 case "$OSNAME" in
