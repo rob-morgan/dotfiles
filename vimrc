@@ -375,7 +375,7 @@ let g:SuperTabDefaultCompletionType='<c-tab>'
 
 " Markdown settings {{{
 let g:markdown_fenced_languages = ['html', 'xml', 'python', 'sh', 'java', 'json', 'yaml']
-command MarkdownPreview !open -a "Google Chrome" "%"
+command! MarkdownPreview !open -a "Google Chrome" "%"
 map <silent><C-m> :MarkdownPreview<cr><cr>
 " }}}
 "
