@@ -47,8 +47,10 @@ Plugin 'xolox/vim-session'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
+Plugin 'ternjs/tern_for_vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'posva/vim-vue'
 Plugin 'Valloric/YouCompleteMe'
 " The copy-as-rtf plugin only works on Mac
 if has('mac')
