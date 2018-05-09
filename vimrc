@@ -479,6 +479,12 @@ if has("autocmd")
         autocmd filetype cmake setlocal expandtab
     augroup end "}}}
 
+    augroup mvn_pom_files "{{{
+        au!
+
+        autocmd BufReadPost pom.xml setlocal ts=2 sw=2 expandtab
+    augroup end "}}}
+
 endif
 " }}}
 
