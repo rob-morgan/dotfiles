@@ -479,6 +479,12 @@ if has("autocmd")
         autocmd filetype cmake setlocal expandtab
     augroup end "}}}
 
+    augroup cucumber_files "{{{
+        au!
+
+        autocmd filetype cucumber setlocal ts=2 sw=2 expandtab
+    augroup end "}}}
+
     augroup mvn_pom_files "{{{
         au!
 
