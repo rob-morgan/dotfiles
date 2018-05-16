@@ -59,9 +59,10 @@ if has('mac')
 endif
 
 " Vim scripts plugins
-Plugin 'SelectBuf'
 Plugin 'bufkill.vim'
 Plugin 'genutils'
+Plugin 'Rename2'
+Plugin 'SelectBuf'
 Plugin 'taglist.vim'
 
 " All plugins must be added before the following lines
