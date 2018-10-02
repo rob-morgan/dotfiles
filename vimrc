@@ -187,8 +187,8 @@ set nomodeline                  " disable mode lines (security measure)
 "set ttyfast                     " always use a fast terminal
 "set cursorline                  " underline the current line, for quick orientation
 
-" Tame the quickfix window (open/close using ,f)
-nmap <silent> <leader>f :QFix<CR>
+" Tame the quickfix window (open/close using ,qf)
+nmap <silent> <leader>qf :QFix<CR>
 
 command! -bang -nargs=? QFix call QFixToggle(<bang>0)
 function! QFixToggle(forced)
@@ -375,6 +375,16 @@ let g:ycm_key_list_previous_completion=['<c-s-tab>','<Up>']
 
 " SuperTab settings {{{
 let g:SuperTabDefaultCompletionType='<c-tab>'
+" }}}
+
+" NERDTree settings {{{
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeWinSize = 51
+nnoremap <leader>f :NERDTreeToggle<CR>
+" Open NERDTree when starting vim with a directory argument
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 " }}}
 
 " Markdown settings {{{
