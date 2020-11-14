@@ -1,0 +1,6 @@
+{
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:/Users/rmorgan/.local/share/lombok/lombok.jar -Xbootclasspath/a:/Users/rmorgan/dev/lombok/lombok.jar",
+    "java.trace.server": "verbose",
+    "suggest.timeout": 5000
+}
+
