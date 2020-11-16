@@ -6,3 +6,6 @@
 	path = mintty-colors-solarized
 	url = https://github.com/karlin/mintty-colors-solarized.git
     ignore = dirty
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/sorin-ionescu/prezto.git
