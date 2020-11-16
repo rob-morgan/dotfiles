@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshenv:
+    ~/.zprofile:
+    ~/.zshrc:
+    ~/.zlogin:
+    ~/.zlogout:
+    ~/.zpreztorc:
+
