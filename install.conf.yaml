@@ -5,6 +5,7 @@
 - clean: ['~']
 
 - link:
+    ~/.p10k.zsh:
     ~/.zshenv:
     ~/.zprofile:
     ~/.zshrc:
