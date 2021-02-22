@@ -2,34 +2,26 @@
 # tap repositories and their packages
 
 tap homebrew/core
-brew ansible
-brew ant
-brew apache-spark
+
+tap rcmdnk/file
+brew brew-file
+
+tap jenv/jenv
+
 brew autoconf
 brew automake
 brew awscli
-brew bash-completion
-brew cairo
-brew cmake
-brew consul
 brew cscope
 brew ctags
-brew docker-completion
-brew filebeat
 brew findutils
 brew fontconfig
 brew freetype
-brew fzf
 brew gd
 brew gdbm
 brew gettext
 brew gflags
 brew git
-brew git-when-merged
 brew glib
-brew gmp
-brew go
-brew gradle
 brew graphviz
 brew icu4c
 brew jemalloc
@@ -43,7 +35,6 @@ brew libidn2
 brew libpng
 brew libsodium
 brew libsvg
-brew libsvg-cairo
 brew libtermkey
 brew libtiff
 brew libtool
@@ -54,19 +45,14 @@ brew libyaml
 brew lua
 brew luajit
 brew lzo
-brew macvim
 brew mas
 brew maven
-brew maven@3.5
 brew msgpack
 brew ncurses
 brew neovim
 brew node
-brew oniguruma
 brew opa
-brew openjdk
 brew openssl@1.1
-brew p7zip
 brew pandoc
 brew pax-construct
 brew pcre
@@ -74,24 +60,14 @@ brew pcre2
 brew pixman
 brew pkg-config
 brew plantuml
-brew postgresql
-brew python@3.8
-brew python@3.9
 brew readline
 brew redis
 brew ripgrep
-brew ruby
-brew scala@2.11
-brew snappy
 brew sphinx-doc
-brew sqlite
 brew svg2pdf
-brew swagger-codegen
 brew tcl-tk
 brew telnet
-brew the_silver_searcher
 brew unibilium
-brew vagrant-completion
 brew vert.x
 brew webp
 brew wget
@@ -100,46 +76,28 @@ brew yarn
 brew zookeeper
 brew zsh
 
+tap adoptopenjdk/openjdk
+cask adoptopenjdk11
+cask adoptopenjdk8
+
 tap homebrew/cask-fonts
 cask font-inconsolata
 cask font-meslo-lg-nerd-font
 
-tap homebrew/cask-versions
-cask adoptopenjdk8
-
 tap homebrew/services
 
 tap homebrew/cask
-cask adobe-acrobat-reader
+cask 1password # /Applications/1Password 7.app
+cask dropbox # /Applications/Dropbox.app
+cask google-chrome # /Applications/Google Chrome.app
 cask docker
-cask drawio
 cask firefox
-cask gimp
 cask insomnia
-cask intellij-idea-ce
-cask jd-gui
-cask mactex
+cask iterm2 # /Applications/iTerm.app
 cask onyx
 cask postman
-cask sqlworkbenchj
-cask tunnelblick
-cask vagrant
-cask virtualbox
 cask visual-studio-code
-
-tap adoptopenjdk/openjdk
-cask adoptopenjdk11
-
-tap coursier/formulas
-brew coursier
-
-tap jenv/jenv
-
-tap rcmdnk/file
-brew brew-file
-
-tap scalacenter/bloop
-brew bloop
+cask vlc # /Applications/VLC.app
 
 # App Store applications
 appstore 406056744 Evernote (10.8.4)
@@ -150,5 +108,3 @@ appstore 409183694 Keynote (10.3.9)
 appstore 409203825 Numbers (10.3.9)
 appstore 409201541 Pages (10.3.9)
 appstore 803453959 Slack (4.12.2)
-appstore 1122008420 Table Tool (1.2.1)
-appstore 585829637 Todoist (7.5)
