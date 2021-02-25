@@ -6,7 +6,10 @@
 
 - link:
     ~/.config:
+    ~/.git_template:
     ~/.p10k.zsh:
+    ~/.vim:
+    ~/.vimrc:
     ~/.zshenv:
     ~/.zprofile:
     ~/.zshrc:
@@ -14,5 +17,10 @@
     ~/.zlogout:
     ~/.zpreztorc:
 
+- create:
+    - ~/.config/nvim/autoload
+    - ~/.config/nvim/plugged
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [curl -fLo ~/.config/nvim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim]
