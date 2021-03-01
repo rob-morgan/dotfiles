@@ -2,28 +2,31 @@
 # tap repositories and their packages
 
 tap homebrew/core
-
-tap rcmdnk/file
-brew brew-file
-
-tap jenv/jenv
-
 brew autoconf
 brew automake
 brew awscli
+brew cairo
 brew cscope
 brew ctags
+brew docker
 brew findutils
 brew fontconfig
 brew freetype
+brew fribidi
 brew gd
 brew gdbm
+brew gdk-pixbuf
 brew gettext
 brew gflags
 brew git
 brew glib
+brew gobject-introspection
+brew graphite2
 brew graphviz
+brew gts
+brew harfbuzz
 brew icu4c
+brew jasper
 brew jemalloc
 brew jenv
 brew jpeg
@@ -33,8 +36,10 @@ brew kubernetes-cli
 brew libffi
 brew libidn2
 brew libpng
+brew librsvg
 brew libsodium
 brew libsvg
+brew libsvg-cairo
 brew libtermkey
 brew libtiff
 brew libtool
@@ -44,26 +49,33 @@ brew libvterm
 brew libyaml
 brew lua
 brew luajit
+brew luajit-openresty
 brew lzo
 brew mas
 brew maven
 brew msgpack
 brew ncurses
 brew neovim
+brew netpbm
 brew node
+brew oniguruma
 brew opa
+brew openjdk
 brew openssl@1.1
 brew pandoc
+brew pango
 brew pax-construct
 brew pcre
 brew pcre2
 brew pixman
 brew pkg-config
 brew plantuml
+brew python@3.9
 brew readline
 brew redis
 brew ripgrep
 brew sphinx-doc
+brew sqlite
 brew svg2pdf
 brew tcl-tk
 brew telnet
@@ -76,9 +88,7 @@ brew yarn
 brew zookeeper
 brew zsh
 
-tap adoptopenjdk/openjdk
-cask adoptopenjdk11
-cask adoptopenjdk8
+tap homebrew/bundle
 
 tap homebrew/cask-fonts
 cask font-inconsolata
@@ -87,24 +97,33 @@ cask font-meslo-lg-nerd-font
 tap homebrew/services
 
 tap homebrew/cask
-cask 1password # /Applications/1Password 7.app
-cask dropbox # /Applications/Dropbox.app
-cask google-chrome # /Applications/Google Chrome.app
-cask docker
+cask 1password
+cask dropbox
 cask firefox
+cask google-chrome
 cask insomnia
-cask iterm2 # /Applications/iTerm.app
+cask iterm2
 cask onyx
 cask postman
+cask tunnelblick
 cask visual-studio-code
-cask vlc # /Applications/VLC.app
+cask vlc
+
+tap adoptopenjdk/openjdk
+cask adoptopenjdk11
+cask adoptopenjdk8
+
+tap jenv/jenv
+
+tap rcmdnk/file
+brew brew-file
 
 # App Store applications
-appstore 406056744 Evernote (10.8.4)
+appstore 406056744 Evernote (10.8.6)
 appstore 682658836 GarageBand (10.3.5)
 appstore 408981434 iMovie (10.2.2)
-appstore 408981381 iPhoto (9.6.1)
 appstore 409183694 Keynote (10.3.9)
 appstore 409203825 Numbers (10.3.9)
 appstore 409201541 Pages (10.3.9)
-appstore 803453959 Slack (4.12.2)
+appstore 803453959 Slack (4.13.0)
+appstore 497799835 Xcode (12.4)
