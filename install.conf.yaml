@@ -16,6 +16,12 @@
     ~/.zlogin:
     ~/.zlogout:
     ~/.zpreztorc:
+    ~/Library/Application Support/Code/User/keybindings.json:
+      create: true
+      path: code/user/keybindings.json
+    ~/Library/Application Support/Code/User/settings.json:
+      create: true
+      path: code/user/settings.json
 
 - create:
     - ~/.config/nvim/autoload
