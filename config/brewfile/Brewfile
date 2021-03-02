@@ -52,7 +52,7 @@ brew luajit
 brew luajit-openresty
 brew lzo
 brew mas
-brew maven
+brew maven@3.5
 brew msgpack
 brew ncurses
 brew neovim
@@ -64,7 +64,6 @@ brew openjdk
 brew openssl@1.1
 brew pandoc
 brew pango
-brew pax-construct
 brew pcre
 brew pcre2
 brew pixman
@@ -105,7 +104,6 @@ cask insomnia
 cask iterm2
 cask onyx
 cask postman
-cask tunnelblick
 cask visual-studio-code
 cask vlc
 
