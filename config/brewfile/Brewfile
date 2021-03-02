@@ -103,6 +103,7 @@ cask google-chrome
 cask insomnia
 cask iterm2
 cask onyx
+cask openvpn-connect
 cask postman
 cask visual-studio-code
 cask vlc
