@@ -31,9 +31,6 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [curl -fLo ~/.config/nvim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim]
 
-- sudo:
-    - link: {/Library/Java/Home: {path: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home}}
-
 - vscodefile:
     file: code/Vscodefile
     insiders: false
