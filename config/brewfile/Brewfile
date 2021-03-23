@@ -36,6 +36,7 @@ brew kubernetes-cli
 brew libffi
 brew libidn2
 brew libpng
+brew libpthread-stubs
 brew librsvg
 brew libsodium
 brew libsvg
@@ -46,13 +47,21 @@ brew libtool
 brew libunistring
 brew libuv
 brew libvterm
+brew libx11
+brew libxau
+brew libxcb
+brew libxdmcp
+brew libxext
+brew libxrender
 brew libyaml
 brew lua
 brew luajit
 brew luajit-openresty
+brew luv
 brew lzo
 brew mas
 brew maven@3.5
+brew mpdecimal
 brew msgpack
 brew ncurses
 brew neovim
@@ -82,6 +91,7 @@ brew unibilium
 brew vert.x
 brew webp
 brew wget
+brew xorgproto
 brew xz
 brew yarn
 brew zookeeper
@@ -97,6 +107,7 @@ tap homebrew/services
 
 tap homebrew/cask
 cask 1password
+cask dbeaver-community
 cask dropbox
 cask firefox
 cask google-chrome
