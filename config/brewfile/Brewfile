@@ -9,6 +9,7 @@ brew cairo
 brew cscope
 brew ctags
 brew docker
+brew elasticsearch
 brew findutils
 brew fontconfig
 brew freetype
@@ -54,6 +55,7 @@ brew libxdmcp
 brew libxext
 brew libxrender
 brew libyaml
+brew logstash
 brew lua
 brew luajit
 brew luajit-openresty
@@ -70,6 +72,7 @@ brew node
 brew oniguruma
 brew opa
 brew openjdk
+brew openjdk@11
 brew openssl@1.1
 brew pandoc
 brew pango
@@ -129,11 +132,11 @@ tap rcmdnk/file
 brew brew-file
 
 # App Store applications
-appstore 406056744 Evernote (10.8.6)
+appstore 406056744 Evernote (10.9.10)
 appstore 682658836 GarageBand (10.3.5)
-appstore 408981434 iMovie (10.2.2)
-appstore 409183694 Keynote (10.3.9)
-appstore 409203825 Numbers (10.3.9)
-appstore 409201541 Pages (10.3.9)
+appstore 408981434 iMovie (10.2.3)
+appstore 409183694 Keynote (11.0)
+appstore 409203825 Numbers (11.0)
+appstore 409201541 Pages (11.0)
 appstore 803453959 Slack (4.13.0)
 appstore 497799835 Xcode (12.4)
