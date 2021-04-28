@@ -176,5 +176,12 @@
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.languageServer": "Microsoft"
 }
