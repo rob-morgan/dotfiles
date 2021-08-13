@@ -19,7 +19,7 @@
     "editor.lineNumbers": "relative",
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "gutter",
-    "editor.cursorStyle": "block",
+    "editor.cursorStyle": "line",
     "editor.rulers": [
         120
     ],
@@ -177,11 +177,17 @@
         "**/.ammonite": true
     },
     "explorer.confirmDelete": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
-    "python.languageServer": "Microsoft"
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.languageServer": "Pylance",
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false,
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "redhat.telemetry.enabled": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
