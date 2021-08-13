@@ -1,0 +1,7 @@
+init.author.name=Rob Morgan
+init.author.email=rmorgan@tracelink.com
+@tracelink:registry=http://walleye.tracelink.com:8081/nexus/content/repositories/opus-npm-temp/
+//walleye.tracelink.com:8081/nexus/content/repositories/opus-npm-temp/:_authToken=cm1vcmdhbjpyb2IxMjM0
+proxy=null
+https-proxy=null
+registry=http://registry.npmjs.org/
