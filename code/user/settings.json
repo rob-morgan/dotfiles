@@ -17,7 +17,6 @@
     ],
     "java.configuration.checkProjectSettingsExclusions": false,
     "editor.lineNumbers": "relative",
-    "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "gutter",
     "editor.cursorStyle": "line",
     "editor.rulers": [
@@ -189,5 +188,6 @@
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "editor.guides.indentation": false
 }
