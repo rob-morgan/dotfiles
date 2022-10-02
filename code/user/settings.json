@@ -180,7 +180,7 @@
         "*.ipynb": "jupyter-notebook"
     },
     "python.languageServer": "Pylance",
-    "editor.tabSize": 8,
+    "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
