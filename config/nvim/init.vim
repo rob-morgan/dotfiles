@@ -8,6 +8,7 @@
 "
 call plug#begin('~/.config/nvim/plugged')
 Plug '/usr/local/opt/fzf'
+Plug 'jparise/vim-graphql'
 Plug 'junegunn/fzf.vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'qpkorr/vim-bufkill'
@@ -185,24 +186,30 @@ nnoremap <leader>v V`]
 
 if !exists('g:gui_oni')
 
-    " Use tab for trigger completion with characters ahead and navigate
+    " Map <tab> for trigger completion, completion confirm, snippet expand and jump
+    " like VSCode
     inoremap <silent><expr> <TAB>
-        \ pumvisible() ? "\<C-n>" :
+        \ coc#pum#visible() ? coc#_select_confirm() :
+        \ coc#expandableOrJumpable() ?
+        \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
         \ <SID>check_back_space() ? "\<TAB>" :
         \ coc#refresh()
-    inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+    inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
     function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
+        let col = col('.') - 1
+        return !col || getline('.')[col - 1]  =~# '\s'
     endfunction
+
+    let g:coc_snippet_next = '<tab>'
 
     " Use <c-space> to trigger completion.
     inoremap <silent><expr> <c-space> coc#refresh()
 
-    " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
-    " Coc only does snippet and additional edit on confirm.
-    inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+    " Use <CR> to confirm selection of selected complete item or notify coc.nvim
+    " to format on enter
+    inoremap <silent><expr> <CR> coc#pum#visible() ? coc#_select_confirm()
+        \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
     " Use `[c` and `]c` to navigate diagnostics
     nmap <silent> [c <Plug>(coc-diagnostic-prev)
