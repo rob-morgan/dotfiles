@@ -1,36 +1,9 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#808080",
-        "terminalCursor.foreground": "#808080"
-    },
-    "editor.fontFamily": "Inconsolata, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "extensions.ignoreRecommendations": false,
-    "java.completion.importOrder": [
-        "",
-        "javax",
-        "java",
-        "#"
-    ],
-    "java.configuration.checkProjectSettingsExclusions": false,
+    "workbench.startupEditor": "none",
     "editor.lineNumbers": "relative",
-    "editor.renderLineHighlight": "gutter",
-    "editor.cursorStyle": "line",
-    "editor.rulers": [
-        120
-    ],
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "gitlens.views.repositories.location": "gitlens",
-    "gitlens.views.fileHistory.location": "gitlens",
-    "gitlens.views.lineHistory.location": "gitlens",
-    "gitlens.views.compare.location": "gitlens",
-    "gitlens.views.search.location": "gitlens",
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/rmorgan/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "editor.tabSize": 2,
     "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.neovimPath": "/opt/homebrew/bin/nvim",
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.insertModeKeyBindings": [
@@ -62,9 +35,18 @@
                 "<C-w>",
                 "l"
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
         }
     ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+       "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "L"
@@ -93,15 +75,6 @@
         {
             "before": [
                 "<leader>",
-                "q"
-            ],
-            "commands": [
-                ":q"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
                 "f"
             ],
             "commands": [
@@ -125,69 +98,8 @@
             "commands": [
                 "workbench.action.previousEditor"
             ]
-        },
-        {
-            "before": [
-                "]",
-                "l"
-            ],
-            "commands": [
-                "editor.action.toggleRenderWhitespace"
-            ]
-        },
-        {
-            "before": [
-                "[",
-                "l"
-            ],
-            "commands": [
-                "editor.action.toggleRenderWhitespace"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "e",
-                "v"
-            ],
-            "commands": [
-                "workbench.action.openSettingsJson"
-            ]
         }
     ],
-    "window.closeWhenEmpty": true,
-    "workbench.editor.showTabs": false,
-    "editor.minimap.enabled": false,
-    "python.jediEnabled": false,
-    "workbench.editor.enablePreview": false,
-    "editor.renderWhitespace": "none",
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "search.smartCase": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.scrollback": 10000,
-    "java.requirements.JDK11Warning": false,
-    "java.semanticHighlighting.enabled": true,
-    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/",
-    "java.project.importOnFirstTimeStartup": "automatic",
-    "files.watcherExclude": {
-        "**/.bloop": true,
-        "**/.metals": true,
-        "**/.ammonite": true
-    },
-    "explorer.confirmDelete": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "python.languageServer": "Pylance",
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
-    "redhat.telemetry.enabled": true,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "editor.guides.indentation": false
+    "workbench.colorTheme": "Monokai",
+    "workbench.preferredDarkColorTheme": "Monokai"
 }
