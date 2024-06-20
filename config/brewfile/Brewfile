@@ -1,142 +1,180 @@
 
 # tap repositories and their packages
 
-tap homebrew/core
-brew autoconf
-brew automake
-brew awscli
-brew cairo
-brew cscope
-brew ctags
-brew docker
-brew elasticsearch
-brew findutils
-brew fontconfig
-brew freetype
-brew fribidi
-brew gd
-brew gdbm
-brew gdk-pixbuf
-brew gettext
-brew gflags
-brew git
-brew glib
-brew gobject-introspection
-brew graphite2
-brew graphviz
-brew gts
-brew harfbuzz
-brew icu4c
-brew jasper
-brew jemalloc
-brew jenv
-brew jpeg
-brew jq
-brew krb5
-brew kubernetes-cli
-brew libffi
-brew libidn2
-brew libpng
-brew libpthread-stubs
-brew librsvg
-brew libsodium
-brew libsvg
-brew libsvg-cairo
-brew libtermkey
-brew libtiff
-brew libtool
-brew libunistring
-brew libuv
-brew libvterm
-brew libx11
-brew libxau
-brew libxcb
-brew libxdmcp
-brew libxext
-brew libxrender
-brew libyaml
-brew logstash
-brew lua
-brew luajit
-brew luajit-openresty
-brew luv
-brew lzo
-brew mas
-brew maven@3.5
-brew mpdecimal
-brew msgpack
-brew ncurses
-brew neovim
-brew netpbm
-brew node
-brew oniguruma
-brew opa
-brew openjdk
-brew openjdk@11
-brew openssl@1.1
-brew pandoc
-brew pango
-brew pcre
-brew pcre2
-brew pixman
-brew pkg-config
-brew plantuml
-brew python@3.9
-brew readline
-brew redis
-brew ripgrep
-brew sphinx-doc
-brew sqlite
-brew svg2pdf
-brew tcl-tk
-brew telnet
-brew unibilium
-brew vert.x
-brew webp
-brew wget
-brew xorgproto
-brew xz
-brew yarn
-brew zookeeper
-brew zsh
+tap 'homebrew/core'
+brew 'aom'
+brew 'autoconf'
+brew 'automake'
+brew 'awscli'
+brew 'brotli'
+brew 'c-ares'
+brew 'ca-certificates'
+brew 'cairo'
+brew 'cffi'
+brew 'cscope'
+brew 'ctags'
+brew 'docutils'
+brew 'findutils'
+brew 'fontconfig'
+brew 'freetype'
+brew 'fribidi'
+brew 'gd'
+brew 'gdbm'
+brew 'gdk-pixbuf'
+brew 'gettext'
+brew 'gflags'
+brew 'giflib'
+brew 'git'
+brew 'glib'
+brew 'gobject-introspection'
+brew 'graphite2'
+brew 'graphviz'
+brew 'gts'
+brew 'harfbuzz'
+brew 'highway'
+brew 'icu4c'
+brew 'imath'
+brew 'jasper'
+brew 'jemalloc'
+brew 'jenv'
+brew 'jpeg'
+brew 'jpeg-turbo'
+brew 'jpeg-xl'
+brew 'jq'
+brew 'krb5'
+brew 'kubernetes-cli'
+brew 'libavif'
+brew 'libffi'
+brew 'libidn2'
+brew 'libnghttp2'
+brew 'libpng'
+brew 'libpthread-stubs'
+brew 'librsvg'
+brew 'libsodium'
+brew 'libsvg'
+brew 'libsvg-cairo'
+brew 'libtermkey'
+brew 'libtiff'
+brew 'libtool'
+brew 'libunistring'
+brew 'libuv'
+brew 'libvmaf'
+brew 'libvterm'
+brew 'libx11'
+brew 'libxau'
+brew 'libxcb'
+brew 'libxdmcp'
+brew 'libxext'
+brew 'libxrender'
+brew 'libyaml'
+brew 'little-cms2'
+brew 'lua'
+brew 'luajit'
+brew 'luajit-openresty'
+brew 'luv'
+brew 'lz4'
+brew 'lzo'
+brew 'm4'
+brew 'mas'
+brew 'mongosh'
+brew 'mpdecimal'
+brew 'msgpack'
+brew 'ncurses'
+brew 'neovim'
+brew 'netpbm'
+brew 'node'
+brew 'node@16'
+brew 'oniguruma'
+brew 'opa'
+brew 'openexr'
+brew 'openjdk'
+brew 'openssl@1.1'
+brew 'openssl@3'
+brew 'pandoc'
+brew 'pango'
+brew 'pcre'
+brew 'pcre2'
+brew 'pixman'
+brew 'pkg-config'
+brew 'plantuml'
+brew 'pycparser'
+brew 'pygments'
+brew 'python-certifi'
+brew 'python-charset-normalizer'
+brew 'python-idna'
+brew 'python-jinja'
+brew 'python-markupsafe'
+brew 'python-packaging'
+brew 'python-requests'
+brew 'python-setuptools'
+brew 'python-tabulate'
+brew 'python-urllib3'
+brew 'python@3.10'
+brew 'python@3.11'
+brew 'python@3.12'
+brew 'python@3.9'
+brew 'readline'
+brew 'redis'
+brew 'ripgrep'
+brew 'six'
+brew 'sphinx-doc'
+brew 'sqlite'
+brew 'svg2pdf'
+brew 'tcl-tk'
+brew 'telnet'
+brew 'tree-sitter'
+brew 'unibilium'
+brew 'webp'
+brew 'wget'
+brew 'xorgproto'
+brew 'xz'
+brew 'yarn'
+brew 'zsh'
+brew 'zstd'
 
-tap homebrew/bundle
+tap 'homebrew/cask'
+cask '1password'
+cask 'dbeaver-community'
+cask 'docker'
+cask 'dropbox'
+cask 'firefox'
+cask 'google-chrome'
+cask 'insomnia'
+cask 'iterm2'
+cask 'onyx'
+cask 'openvpn-connect'
+cask 'postman'
+cask 'visual-studio-code'
+cask 'vlc'
 
-tap homebrew/cask-fonts
-cask font-inconsolata
-cask font-meslo-lg-nerd-font
+tap 'homebrew/bundle'
 
-tap homebrew/services
+tap 'homebrew/cask-fonts'
+cask 'font-inconsolata'
+cask 'font-meslo-lg-nerd-font'
 
-tap homebrew/cask
-cask 1password
-cask dbeaver-community
-cask dropbox
-cask firefox
-cask google-chrome
-cask insomnia
-cask iterm2
-cask onyx
-cask openvpn-connect
-cask postman
-cask visual-studio-code
-cask vlc
+tap 'homebrew/services'
 
-tap adoptopenjdk/openjdk
-cask adoptopenjdk11
-cask adoptopenjdk8
+tap 'adoptopenjdk/openjdk'
+cask 'adoptopenjdk11'
+cask 'adoptopenjdk8'
 
-tap jenv/jenv
+tap 'jenv/jenv'
 
-tap rcmdnk/file
-brew brew-file
+tap 'mongodb/brew'
+brew 'mongodb-community'
+brew 'mongodb-database-tools'
+
+tap 'rcmdnk/file'
+brew 'brew-file'
 
 # App Store applications
-appstore 406056744 Evernote (10.9.10)
-appstore 682658836 GarageBand (10.3.5)
-appstore 408981434 iMovie (10.2.3)
-appstore 409183694 Keynote (11.0)
-appstore 409203825 Numbers (11.0)
-appstore 409201541 Pages (11.0)
-appstore 803453959 Slack (4.13.0)
-appstore 497799835 Xcode (12.4)
+mas '1Password for Safari (2.17.1)', id: 1569813296
+mas 'Evernote (10.67.4)', id: 406056744
+mas 'GarageBand (10.4.10)', id: 682658836
+mas 'iMovie (10.4)', id: 408981434
+mas 'iPhoto (9.6.1)', id: 408981381
+mas 'Keynote (13.1)', id: 409183694
+mas 'Numbers (13.1)', id: 409203825
+mas 'Pages (13.2)', id: 409201541
+mas 'Xcode (15.0.1)', id: 497799835
