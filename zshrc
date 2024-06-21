@@ -26,10 +26,10 @@ export EDITOR=nvim
 
 export PATH=/usr/local/opt/maven@3.5/bin:$PATH
 
-export PATH="$PATH:$HOME/.jenv/bin"
-eval "$(jenv init -)"
-jenv enable-plugin maven > /dev/null
-jenv enable-plugin export > /dev/null
+#export PATH="$PATH:$HOME/.jenv/bin"
+#eval "$(jenv init -)"
+#jenv enable-plugin maven > /dev/null
+#jenv enable-plugin export > /dev/null
 
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
     source $(brew --prefix)/etc/brew-wrap
