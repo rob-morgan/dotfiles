@@ -1,0 +1,11 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "dotbot-vscode"]
+	path = dotbot-vscode
+	url = https://github.com/hujianxin/dotbot-vscode
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/sorin-ionescu/prezto.git
+	ignore = dirty
